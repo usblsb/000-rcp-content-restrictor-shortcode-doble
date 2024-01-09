@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ayuda - Enclosed Content Restrictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ayuda para el Plugin: Enclosed Content Restrictor</h1>
+    
+    <h2>¿Qué hace este plugin?</h2>
+    <p>
+        Este plugin permite restringir el contenido encerrado en el shortcode basado en roles de usuario, capacidades específicas y niveles de membresía. Es especialmente útil para sitios que ofrecen contenido premium o exclusivo para ciertos usuarios.
+    </p>
+
+    <h2>¿Cómo funciona?</h2>
+    <p>
+        El plugin utiliza el shortcode <code>[enclosed_content_restrictor]</code> ... <code>[/enclosed_content_restrictor]</code> para envolver el contenido que deseas restringir. Puedes especificar el rol, la capacidad y los niveles de membresía necesarios para acceder a este contenido.
+    </p>
+
+    <h2>Utilidad del Plugin</h2>
+    <p>
+        Ideal para sitios de membresía, educativos o de contenido premium, este plugin asegura que solo los usuarios con los privilegios adecuados puedan acceder a contenido específico.
+    </p>
+
+    <h2>¿Cómo se usa?</h2>
+    <p>
+        Aquí tienes algunos ejemplos de cómo puedes utilizar el shortcode:
+        <ul>
+            <li>Restringir contenido solo a usuarios con un rol específico:<br>
+                <code>[enclosed_content_restrictor role="rol_deseado"]...[/enclosed_content_restrictor]</code>
+            </li>
+            <li>Restringir contenido basado en una capacidad específica del usuario:<br>
+                <code>[enclosed_content_restrictor capability="capacidad_deseada"]...[/enclosed_content_restrictor]</code>
+            </li>
+            <li>Restringir contenido a niveles de membresía específicos:<br>
+                <code>[enclosed_content_restrictor membership_levels="1,2"]...[/enclosed_content_restrictor]</code>
+            </li>
+        </ul>
+    </p>
+    <p>
+        Puedes combinar estos atributos para crear reglas de acceso más específicas. Por ejemplo, para restringir contenido a usuarios con un rol específico y un nivel de membresía, puedes usar:<br>
+        <code>[enclosed_content_restrictor role="rol_deseado" membership_levels="1,2"]...[/enclosed_content_restrictor]</code>
+    </p>
+
+    <p>
+        Nota: Si desactivas el plugin, el contenido encerrado entre los shortcodes será visible para todos los usuarios.
+    </p>
+</body>
+</html>
